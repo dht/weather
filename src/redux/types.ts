@@ -66,3 +66,5 @@ export type Action = {
   payload: any;
   id?: string;
 };
+
+export type Json = Record<string, any>;

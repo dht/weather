@@ -10,7 +10,7 @@
     ✔ Implement reducers @started(23-11-23 19:57) @done(23-11-23 20:07) @lasted(10m)
     ✔ Implement selectors @started(23-11-23 20:07) @done(23-11-23 20:23) @lasted(16m)
 ☐ Home page
-    ☐ Implement layout with flexbox/grid
+    ✔ Implement layout with flexbox/grid @started(23-11-23 20:25) @done(23-11-23 21:37) @lasted(1h12m38s)
     ☐ Implement header UI (Spec-1)
     ☐ Implement search UI (Spec-2)
     ☐ Implement components
