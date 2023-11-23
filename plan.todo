@@ -1,3 +1,22 @@
-☐ Add README @started(23-11-23 18:51)
-☐ Add development plan
+✔ Add README @started(23-11-23 18:51) @done(23-11-23 18:52) @lasted(1m9s)
+✔ Add development plan @started(23-11-23 18:52) @done(23-11-23 19:00) @lasted(8m49s)
 ☐ Bootstrap project
+    ☐ Add material UI
+    ☐ Add toastify
+    ☐ Add react-router-dom
+☐ Add API with error Handling
+☐ Add Redux
+    ☐ Implement initial state
+    ☐ Implement reducers
+☐ Home page
+    ☐ Implement layout with flexbox/grid
+    ☐ Implement header UI (Spec-1)
+    ☐ Implement search UI (Spec-2)
+    ☐ Implement components
+    ☐ Implement navigation
+☐ Favorites screen
+☐ Bonus
+    ☐ Default location (Bonus #1)
+    ☐ Add dark/light theme (Bonus #2)
+    ☐ Add Celsius/Fahrenheit toggle button (Bonus #3)
+    ☐ Add animations (Bonus #4)

@@ -29,3 +29,29 @@ and use them locally during development.
    Doe-01-12-2018).
 4. Deploy the compiled app to your server or GitHub pages/Heroku/etc - MUST
    Send us the git repository link and a link to the deployed app (2 links)
+
+## SPECS
+
+1. Create a header with navigation icons/links/buttons for main and favorites screen.
+2. The main screen (weather details) will be composed of a search field to search a
+   location’s weather by city name. And below it, the current weather and a 5-day forecast of
+   the searched location. A location should have an indication if it’s already saved in
+   favorites, and a button to add/remove from favorites (it can be the same button).
+3. Display Tel Aviv weather by default.
+4. Favorites screen will be composed of a list of favorite locations. Each location should
+   have an ID, name, and current weather. Clicking on a favorite will navigate to the
+   main screen showing the details of that location.
+5. Searching should be done in English letters only
+6. State management is a must!
+7. Responsive design is a must! (flexbox/grid will give you extra points 😉).
+8. Error handling is a must! (Can be done with toast, modal).
+
+## BONUSES
+
+1. Set the default location by using the Geolocation API. you will need another API
+   endpoint for this: get location key by lat/lon.
+2. Add dark/light theme support (add toggle button in the header).
+3. Add Celsius/Fahrenheit toggle button.
+4. Add animations (with good taste).
+   EXAMPLE
+   We’ve created a UI mockup, so you’ll have a basic idea of what we expect to see.
