@@ -33,6 +33,15 @@ export const locationsReducer = (state: Locations, action: Action) => {
   }
 };
 
+export const currentLocationReducer = (state: Locations, action: Action) => {
+  switch (action.type) {
+    case 'SET_CURRENT_LOCATION':
+      return action.payload;
+    default:
+      return state ?? {};
+  }
+};
+
 export const dailyForecastsReducer = (state: DailyForecasts, action: Action) => {
   switch (action.type) {
     case 'SET_FORECASTS':

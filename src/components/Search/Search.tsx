@@ -1,20 +1,36 @@
 import { Autocomplete, TextField } from '@mui/material';
+import { useRemoteOptions } from './Search.hooks';
 import { Container } from './Search.style';
+import { Json } from '../../redux/types';
 
-const top100Films = [
-  { label: 'The Godfather', id: 1 },
-  { label: 'Pulp Fiction', id: 2 },
-];
+type SearchProps = {
+  onSelect: (item: Json) => void;
+};
 
-export const Search = () => {
+export const Search = (props: SearchProps) => {
+  const [value, options, { onChange, onInputChange }] = useRemoteOptions();
+
+  function onSelect() {
+    props.onSelect(value?.item);
+  }
+
   return (
     <Container>
       <Autocomplete
-        disablePortal
-        id='combo-box-demo'
-        options={top100Films}
+        id='weather-locations'
         sx={{ width: 300 }}
-        renderInput={(params) => <TextField {...params} label='Movie' />}
+        getOptionLabel={(option) => (typeof option === 'string' ? option : option.title)}
+        filterOptions={(x) => x}
+        options={options}
+        autoComplete
+        includeInputInList
+        filterSelectedOptions
+        value={value}
+        onSelect={onSelect}
+        noOptionsText='No locations'
+        onChange={onChange}
+        onInputChange={onInputChange}
+        renderInput={(params) => <TextField {...params} label='Search a city' fullWidth />}
       />
     </Container>
   );

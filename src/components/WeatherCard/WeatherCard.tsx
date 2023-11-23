@@ -12,7 +12,8 @@ export const WeatherCard = (props: WeatherCardProps) => {
   const { dayOfWeek, degrees, description } = item;
 
   return (
-    <Container sx={{ minWidth: 225 }}>
+    // animated css
+    <Container sx={{ minWidth: 225 }} className='animate__animated animate__bounce'>
       <CardContent>
         <DayOfTheWeek variant='h5'>{dayOfWeek}</DayOfTheWeek>
         <Value color='text.secondary'>{degrees}</Value>

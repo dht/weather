@@ -1,5 +1,4 @@
 import { Store } from './types';
-import dailyForecasts from '../api/response.forecast.json';
 
 export const initialState: Store = {
   appState: {
@@ -22,6 +21,6 @@ export const initialState: Store = {
     },
     isFavorite: false,
   },
-  dailyForecasts: dailyForecasts.DailyForecasts,
+  dailyForecasts: [],
   favorites: {},
 };

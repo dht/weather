@@ -30,7 +30,7 @@ export const PageHome = () => {
         <TopRight>
           <FavoriteButton full={true} onClick={onClick} />
         </TopRight>
-        <Center>
+        <Center className='animate__animated animate__fadeIn'>
           <Summary variant='h2'>{currentWeather.description}</Summary>
         </Center>
         <Bottom>

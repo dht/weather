@@ -10,6 +10,11 @@ export const setLocations = (payload: Partial<Locations>) => ({
   payload,
 });
 
+export const setCurrentLocation = (payload: Partial<Location>) => ({
+  type: 'SET_CURRENT_LOCATION',
+  payload,
+});
+
 export const patchLocation = (id: string, payload: Partial<Location>) => ({
   type: 'PATCH_LOCATION',
   id,

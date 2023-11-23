@@ -1,8 +1,8 @@
 import { combineReducers, createStore } from 'redux';
 import {
   appStateReducer,
+  currentLocationReducer,
   dailyForecastsReducer,
-  locationReducer,
   locationsReducer,
 } from './reducers';
 import { Store } from './types';
@@ -15,7 +15,7 @@ export const initStore = (initialState: Store) => {
   const rootReducer = combineReducers({
     appState: appStateReducer,
     dailyForecasts: dailyForecastsReducer,
-    currentLocation: locationReducer,
+    currentLocation: currentLocationReducer,
     favorites: locationsReducer,
   });
 
