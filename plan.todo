@@ -1,13 +1,14 @@
 ✔ Add README @started(23-11-23 18:51) @done(23-11-23 18:52) @lasted(1m9s)
 ✔ Add development plan @started(23-11-23 18:52) @done(23-11-23 19:00) @lasted(8m49s)
-☐ Bootstrap project
+✔ Bootstrap project @done(23-11-23 19:50)
     ✔ Add material UI @started(23-11-23 19:01) @done(23-11-23 19:15) @lasted(14m29s)
     ✔ Add toastify @started(23-11-23 19:15) @done(23-11-23 19:18) @lasted(3m45s)
     ✔ Add react-router-dom @started(23-11-23 19:19) @done(23-11-23 19:21) @lasted(2m53s)
 ✔ Add API with error Handling @started(23-11-23 19:22) @done(23-11-23 19:50) @lasted(28m30s)
 ☐ Add Redux
-    ☐ Implement initial state
-    ☐ Implement reducers
+    ✔ Implement initial state @started(23-11-23 19:50) @done(23-11-23 20:07) @lasted(17m33s)
+    ✔ Implement reducers @started(23-11-23 20:07) @done(23-11-23 20:07) @lasted(32s)
+    ☐ Implement selectors
 ☐ Home page
     ☐ Implement layout with flexbox/grid
     ☐ Implement header UI (Spec-1)

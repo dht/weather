@@ -4,6 +4,8 @@ import 'react-toastify/dist/ReactToastify.css';
 import { useMount } from 'react-use';
 import { PageFavorites } from '../pages/PageFavorites';
 import { PageHome } from '../pages/PageHome';
+import { Provider } from 'react-redux';
+import { store } from '../redux/store';
 
 export const App = () => {
   useMount(() => {
@@ -11,13 +13,15 @@ export const App = () => {
   });
 
   return (
-    <Router>
-      <Routes>
-        <Route path='/home' element={<PageHome />} />
-        <Route path='/browse' element={<PageFavorites />} />
-        <Route path='/' element={<Navigate to='/home' />} />
-      </Routes>
-      <ToastContainer />
-    </Router>
+    <Provider store={store}>
+      <Router>
+        <Routes>
+          <Route path='/home' element={<PageHome />} />
+          <Route path='/browse' element={<PageFavorites />} />
+          <Route path='/' element={<Navigate to='/home' />} />
+        </Routes>
+        <ToastContainer />
+      </Router>
+    </Provider>
   );
 };
