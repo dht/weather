@@ -15,22 +15,7 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx",
-    "baseUrl": "../",
-    "paths": {
-      "@gdi/auth": ["packages/gdi-auth"],
-      "@gdi/firebase": ["packages/gdi-firebase"],
-      "@gdi/ui": ["packages/gdi-ui"],
-      "@gdi/store-base": ["packages/store-base"],
-      "@gdi/widgets-starter": ["packages/widgets"],
-      "@gdi/app-home": ["apps/home"],
-      "@gdi/app-boards": ["apps/boards"],
-      "@gdi/app-docs": ["apps/docs"],
-      "redux-connected": ["packages/redux-connected"],
-      "igrid": ["packages/igrid"],
-      "multi": ["packages/multi"],
-      "isokit": ["packages/isokit"]
-    }
+    "jsx": "react-jsx"
   },
   "include": ["src"],
   "exclude": ["src/test"]

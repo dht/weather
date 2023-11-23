@@ -1,7 +1,8 @@
 export type Store = {
   appState: AppState;
-  locations: Locations;
+  currentLocation: Location;
   dailyForecasts: DailyForecasts;
+  favorites: Locations;
 };
 
 export type AppState = {

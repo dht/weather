@@ -14,7 +14,7 @@ export const locationReducer = (state: Location, action: Action) => {
     case 'PATCH_LOCATION':
       return { ...state, ...action.payload };
     default:
-      return state;
+      return state ?? {};
   }
 };
 
